@@ -1,29 +1,24 @@
-# Foobar
+# ReExtButton
 
-Foobar is a Python library for dealing with word pluralization.
+ReExtButton is a React component for the Sencha ExtJS Button.
 
 ## Installation
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+Use the package manager [npm](https://npmjs.com) to install ReExtButton.
 
 ```bash
-pip install foobar
+npm install @gusmano/ReExtButton
 ```
 
 ## Usage
 
 ```python
-import foobar
+import ReExtButton from '@gusmano/ReExtButton'
 
-# returns 'words'
-foobar.pluralize('word')
-
-# returns 'geese'
-foobar.pluralize('goose')
-
-# returns 'phenomenon'
-foobar.singularize('phenomena')
-```
+<ReExtButton
+ config={{text: 'click me'}}
+ onTap={() => { console.log('clicked')}}
+/>
 
 ## Contributing
 
